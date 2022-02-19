@@ -20,9 +20,12 @@ namespace Ejercicio9_4
     /// </summary>
     public partial class MainWindow : Window
     {
+        /*  Crear una enumeración para los
+            diferentes tipos de neumáticos. */
         public MainWindow()
         {
             InitializeComponent();
         }
+        
     }
 }

@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio8_5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Dos cadenas" Height="300" Width="400">
     <Grid>
 
+        <StackPanel Orientation="Vertical" Margin="10" >
+
+            <TextBlock Text="Este programa organiza dos palabras" FontSize="20" />
+
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <TextBlock Text="Ingrese primera palabra" FontSize="16" />
+                <TextBox x:Name="PrimeraPalabraTextBox" Text="" Margin="5,0,0,0" Width="150" />
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <TextBlock Text="Ingrese Segunda palabra" FontSize="16" />
+                <TextBox x:Name="SegundaPalabraTextBox" Text="" Margin="5,0,0,0" Width="150" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="5" >
+                <Button Content="Organizar" Click="OrganizarButton_Click" />
+            </StackPanel>
+
+            <TextBox x:Name="ResultadoTextBox" Text="" Height="50" Width="150" />
+
+        </StackPanel>
+            
     </Grid>
 </Window>

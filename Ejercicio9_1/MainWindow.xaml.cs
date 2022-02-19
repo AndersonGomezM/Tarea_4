@@ -20,9 +20,37 @@ namespace Ejercicio9_1
     /// </summary>
     public partial class MainWindow : Window
     {
+        /*  Crear una estructura para guardar
+            los productos de una tienda. */
+
+        Tienda t;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private struct Tienda
+        {
+            public int codigo;
+            public string descripcion;
+            public int costo;
+        }
+
+        private void NuevoButton_Click(object sender, RoutedEventArgs e)
+        {
+            CodigoTextBox.Text = "";
+            DescripcionTextBox.Text = "";
+            CostoTextBox.Text = "";
+        }
+
+        private void GuardarButton_Click(object sender, RoutedEventArgs e)
+        {
+            t.codigo = int.Parse(CodigoTextBox.Text);
+            t.descripcion = DescripcionTextBox.Text;
+            t.costo = int.Parse(CostoTextBox.Text);
+            
+            MessageBox.Show("Se a guardado con exito.");
         }
     }
 }

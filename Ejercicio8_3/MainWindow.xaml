@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio8_3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Relog" Height="150" Width="350">
     <Grid>
-
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+            <TextBlock x:Name="RelogTextBlock" Text="" FontSize="26" />
+        </StackPanel>
     </Grid>
 </Window>
